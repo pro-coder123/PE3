@@ -11,23 +11,23 @@ import static org.junit.Assert.assertNotNull;
 
 public class FirstnLastDateTest {
 
-    private static FirstnLastDate object;
+    private static FirstnLastDate obj;
 
     @BeforeClass
-    public static void setup()
+    public void setup()
     {
-        object=new FirstnLastDate();
+        obj=new FirstnLastDate();
     }
     @AfterClass
-    public static void teardown()
+    public void teardown()
     {
-        object=null;
+        obj=null;
     }
     @Test
-    public static void TestFirstnlastDate()
+    public void TestFirstnlastDate()
     {
-        assertEquals("Incorrect Logic","Mon 09/09/2019",object.ThrowFirstDate());
-        assertEquals("Incorrect Logic","Sun  15/09/2019",object.ThrowLastDate());
+        assertEquals("Incorrect Logic","Mon 09/09/2019",obj.ThrowFirstDate());
+        assertEquals("Incorrect Logic","Sun 15/09/2019",obj.ThrowLastDate());
 
     }
     @Test

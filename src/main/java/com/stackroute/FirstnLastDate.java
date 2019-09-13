@@ -1,16 +1,29 @@
 package com.stackroute;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 public class FirstnLastDate {
 
 
 
-    public static String ThrowFirstDate()
+    public String ThrowFirstDate()
     {
-return null;
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
+        return df.format(c.getTime());
+
     }
-    public static String ThrowLastDate()
+    public String ThrowLastDate()
     {
-return null;
+        Calendar c = Calendar.getInstance();
+        c.set(Calendar.DAY_OF_WEEK, Calendar.MONDAY);
+        DateFormat df = new SimpleDateFormat("EEE dd/MM/yyyy");
+        c.add(Calendar.DATE, 6);
+        return df.format(c.getTime());
     }
 
 }

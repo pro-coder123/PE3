@@ -27,7 +27,6 @@ public class RemoveVowelTest {
     {
         assertNotEquals("incorrect logic",new String[]{"Ind","Untd stts","Grmy","Egypt","czchslvk"},object.vowelremove(new String[]{"India","United states","Germany","Egypt","czechoslovakia"}));
         assertNotEquals("incorrect logic",new String[]{"Hke","Whtspp","Fcbk"},object.vowelremove(new String[]{"Hike","Whatsapp","Facebook"}));
-
     }
     @Test
     public static void TestRemoveVowelFailure()
